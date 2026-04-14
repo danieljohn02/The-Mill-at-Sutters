@@ -1117,14 +1117,14 @@ h3 {
    ═══════════════════════════════════════════ */
 #contact {
   background: #141a14;
-  padding: 120px 8vw;
+  padding: 120px 8vw 60px;
 }
-.contact-grid {
+.contact-top-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 64px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 .contact-col h3 {
   font-family: var(--font-display);
@@ -1138,22 +1138,40 @@ h3 {
 }
 .contact-col address strong { color: var(--color-cream); }
 
-/* Map placeholder */
-.map-placeholder {
-  aspect-ratio: 16/9;
-  background: linear-gradient(135deg, #0d1a0d 0%, #1e2b1e 50%, #0d1a0d 100%);
-  position: relative;
+/* Map embed */
+.map-embed {
   margin-top: 20px;
+  overflow: hidden;
+}
+.map-embed iframe {
+  display: block;
+  width: 100%;
+}
+
+/* Stay in the Loop — full width below */
+.contact-bottom {
+  border-top: 1px solid rgba(184,134,11,0.15);
+  padding-top: 28px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact-bottom h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.contact-bottom-inner {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.map-pin {
-  font-size: 28px;
-  color: var(--color-brass);
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -70%);
+.social-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 /* Hours */
@@ -1188,13 +1206,13 @@ h3 {
 
 /* Social + Newsletter */
 .social-handle {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--color-cream);
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 .social-icons {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   margin-bottom: 24px;
 }
 .social-icon {
@@ -1212,7 +1230,7 @@ h3 {
 }
 
 /* Newsletter */
-.newsletter-form { margin-top: 16px; }
+.newsletter-form { margin-top: 0; }
 .newsletter-input-wrap {
   display: flex;
   gap: 0;
@@ -1315,7 +1333,6 @@ h3 {
 @media (max-width: 900px) {
   .gallery-masonry { columns: 2; }
   .specials-grid { grid-template-columns: 1fr 1fr; }
-  .contact-grid { gap: 40px; }
 }
 
 /* ═══════════════════════════════════════════
@@ -1409,10 +1426,13 @@ h3 {
 
   /* ─── Contact ─── */
   #contact { padding: 72px 20px; }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-top-grid { grid-template-columns: 1fr; gap: 40px; margin-bottom: 40px; }
   .hours-list > div { font-size: 14px; }
+  .contact-bottom-inner { flex-direction: column; gap: 24px; }
+  .social-block { flex-direction: column; gap: 12px; }
   .newsletter-input-wrap { flex-direction: column; gap: 8px; }
   .newsletter-input-wrap .btn { width: 100%; text-align: center; }
+  .map-embed iframe { height: 200px; }
 
   /* ─── Footer ─── */
   #site-footer { padding: 36px 20px 24px; }
