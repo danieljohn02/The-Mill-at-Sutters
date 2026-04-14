@@ -1358,9 +1358,9 @@ h3 {
   h1 { font-size: clamp(48px, 12vw, 64px); }
   .hero-location { font-size: 18px; }
   .hero-subtitle { font-size: 17px; }
-  .hero-buttons { flex-direction: column; gap: 12px; }
-  .hero-buttons .btn { text-align: center; }
-  .scroll-indicator { bottom: 20px; }
+  .hero-buttons { flex-direction: column; gap: 10px; }
+  .hero-buttons .btn { text-align: center; padding: 10px 20px; font-size: 12px; }
+  .scroll-indicator { bottom: 12px; }
   .hero-watermark { font-size: 30vw; top: 15%; }
 
   /* ─── About ─── */
