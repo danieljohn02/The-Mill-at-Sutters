@@ -1359,7 +1359,7 @@ h3 {
   .hero-location { font-size: 18px; }
   .hero-subtitle { font-size: 17px; }
   .hero-buttons { flex-direction: column; gap: 10px; align-items: flex-start; }
-  .hero-buttons .btn { text-align: center; padding: 12px 24px; font-size: 13px; width: 230px; }
+  .hero-buttons .btn { display: block; text-align: center; padding: 12px 24px; font-size: 13px; max-width: 230px !important; width: 230px !important; box-sizing: border-box; }
   .scroll-indicator { bottom: 12px; }
   .hero-watermark { font-size: 30vw; top: 15%; }
 
