@@ -1355,8 +1355,8 @@ h3 {
     padding-right: 24px;
     max-width: 100%;
   }
-  h1 { font-size: clamp(40px, 10vw, 56px); }
-  .hero-location { font-size: 15px; }
+  h1 { font-size: clamp(56px, 14vw, 80px); }
+  .hero-location { font-size: 21px; }
   .hero-subtitle { font-size: 17px; }
   .hero-buttons { flex-direction: column; gap: 12px; }
   .hero-buttons .btn { text-align: center; }
@@ -1405,7 +1405,7 @@ h3 {
 
   /* ─── Gallery ─── */
   #gallery { padding: 72px 20px; }
-  .gallery-masonry { columns: 1; }
+  .gallery-masonry { columns: 2; }
   .gallery-filters { gap: 6px; }
   .lightbox-image { min-width: 85vw; min-height: 50vh; }
   .lightbox-content { max-width: 95vw; }
