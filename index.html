@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mill at Sutters — Where the Night Comes Alive</title>
+  <meta name="description" content="High-end bar & grill in Airmont, NY. Craft food, exceptional cocktails, live music every weekend. Open late.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav id="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="The Mill at Sutters — Home">
+        <span class="logo-line-1">The Mill</span>
+        <span class="logo-diamond">◆</span>
+        <span class="logo-line-2">at Sutters</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#private-events">Private Events</a></li>
+      </ul>
+
+      <a href="#reservations" class="btn btn-amber nav-cta">Reserve a Table</a>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay nav -->
+  <div class="mobile-nav-overlay" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+    <ul role="list">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#private-events">Private Events</a></li>
+      <li><a href="#reservations" class="btn btn-amber">Reserve a Table</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-bg">
+        <img src="assets/hero.jpg" alt="Atmospheric interior of The Mill at Sutters — warm lighting over a rustic wood bar with craft spirits" class="hero-img" loading="eager">
+        <div class="hero-overlay"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-grain"></div>
+      </div>
+      <div class="hero-watermark" aria-hidden="true">MILL</div>
+      <div class="hero-content reveal">
+        <p class="hero-location">✦ Airmont, New York ✦</p>
+        <h1>Where the<br>Night Comes<br>Alive.</h1>
+        <p class="hero-subtitle">Craft food. Exceptional cocktails.<br>Live music every weekend.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-amber">View the Menu</a>
+          <a href="#reservations" class="btn btn-outline">Make a Reservation</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-text">scroll</span>
+        <span class="scroll-line"></span>
+        <span class="scroll-chevron">⌄</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" aria-label="Our Story">
+      <div class="about-glow" aria-hidden="true"></div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="about-image-frame">
+            <img src="assets/about.jpg" alt="Interior detail — amber Edison bulbs, warm backlit bottles, brass fixtures along the bar" loading="lazy">
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="section-label">✦ Our Story</p>
+          <h2>Rooted in Craft.<br>Built for the Night.</h2>
+          <p>The Mill at Sutters was born from a simple idea: that a great night out shouldn't mean choosing between incredible food and a real atmosphere. Situated in Airmont, New York, we built a space where hand-crafted cocktails meet fire-kissed cooking, and where the music is always live.</p>
+          <p>Whether you're here for date night, celebrating something worth celebrating, or just chasing down the kind of evening you'll still be talking about on Monday — you're in the right place.</p>
+          <blockquote>
+            <p>"This is the kind of place that ruins every other restaurant for you."</p>
+          </blockquote>
+          <p class="about-hours">Open Tuesday–Sunday · Kitchen open late</p>
+        </div>
+      </div>
+      <div class="stats-bar reveal">
+        <div class="stat">
+          <span class="stat-number">New Era</span>
+          <span class="stat-label">Fully revamped, reimagined</span>
+        </div>
+        <span class="stat-divider" aria-hidden="true">|</span>
+        <div class="stat">
+          <span class="stat-number">Full Bar</span>
+          <span class="stat-label">Craft cocktails & curated spirits</span>
+        </div>
+        <span class="stat-divider" aria-hidden="true">|</span>
+        <div class="stat">
+          <span class="stat-number">Live Music</span>
+          <span class="stat-label">Every Friday & Saturday</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ MENU ═══════════════ -->
+    <section id="menu" aria-label="Menu">
+      <header class="section-header reveal">
+        <p class="section-label">✦ Eat & Drink</p>
+        <h2>The Menu</h2>
+        <p class="section-subtitle">Locally sourced. Properly finished. Classics done right.</p>
+      </header>
+
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button role="tab" class="tab-btn active" aria-selected="true" data-tab="food">Food</button>
+        <button role="tab" class="tab-btn" aria-selected="false" data-tab="cocktails">Cocktails & Spirits</button>
+        <button role="tab" class="tab-btn" aria-selected="false" data-tab="wine-beer">Wine & Beer</button>
+        <button role="tab" class="tab-btn" aria-selected="false" data-tab="specials">Chef's Specials</button>
+      </div>
+
+      <!-- FOOD -->
+      <div class="tab-panel active" id="panel-food" role="tabpanel">
+        <h3 class="menu-category">Starters</h3>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Truffle Fries with Parmesan & Herbs</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$14</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Crispy Calamari</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$18</span>
+            </div>
+            <p class="item-desc">Lemon aioli, calabrian chili</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Duck Confit Flatbread</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$22</span>
+            </div>
+            <p class="item-desc">Fig mostarda, goat cheese</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Burrata</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$19</span>
+            </div>
+            <p class="item-desc">Heirloom tomato, basil oil, grilled bread</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Wagyu Beef Sliders (3)</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$26</span>
+            </div>
+            <p class="item-desc">Caramelized onion, aged cheddar</p>
+          </article>
+        </div>
+
+        <h3 class="menu-category">Bar Classics</h3>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">The Mill Burger</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$19</span>
+            </div>
+            <p class="item-desc">Half-pound patty, aged cheddar, lettuce, tomato, special sauce, brioche bun</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Philly Cheesesteak</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$21</span>
+            </div>
+            <p class="item-desc">Shaved ribeye, peppers, onions, provolone, toasted hoagie</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Crispy Chicken Sandwich</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$18</span>
+            </div>
+            <p class="item-desc">Buttermilk-brined, pickles, slaw, spicy aioli</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Grilled Chicken Club</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$17</span>
+            </div>
+            <p class="item-desc">Bacon, avocado, swiss, tomato, herb mayo, toasted sourdough</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">BBQ Bacon Burger</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$21</span>
+            </div>
+            <p class="item-desc">Smoked bacon, onion ring, cheddar, house BBQ, brioche bun</p>
+          </article>
+        </div>
+
+        <h3 class="menu-category">Mains</h3>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">12oz Ribeye</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$58</span>
+            </div>
+            <p class="item-desc">Herb butter, roasted bone marrow, crispy potatoes</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Pan-Seared Salmon</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$38</span>
+            </div>
+            <p class="item-desc">Cauliflower purée, lemon caper beurre blanc</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Short Rib Tagliatelle</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$42</span>
+            </div>
+            <p class="item-desc">48-hour braised beef, porcini, grana padano</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Half Roasted Chicken</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$34</span>
+            </div>
+            <p class="item-desc">Pan jus, roasted root vegetables</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Wild Mushroom Risotto</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$32</span>
+            </div>
+            <p class="item-desc">Truffle, parmesan, crispy sage <em>(v)</em></p>
+          </article>
+        </div>
+
+        <h3 class="menu-category">Desserts</h3>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Warm Chocolate Fondant</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$14</span>
+            </div>
+            <p class="item-desc">Vanilla bean ice cream, salted caramel</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Seasonal Cheesecake</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$13</span>
+            </div>
+            <p class="item-desc">Graham crust, berry compote</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Crème Brûlée</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$12</span>
+            </div>
+            <p class="item-desc">Classic, torched tableside</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- COCKTAILS & SPIRITS -->
+      <div class="tab-panel" id="panel-cocktails" role="tabpanel" hidden>
+        <h3 class="menu-category">Signature Cocktails</h3>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">The Sutter's Gold</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$18</span>
+            </div>
+            <p class="item-desc">Rye whiskey, honey syrup, lemon, ginger beer, smoked rosemary</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Mill Mule</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$16</span>
+            </div>
+            <p class="item-desc">House-infused pepper vodka, ginger beer, lime, cucumber</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Ember Old Fashioned</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$20</span>
+            </div>
+            <p class="item-desc">Bourbon, demerara, angostura & mole bitters, orange peel (expressed)</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">The Airmont Sour</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$17</span>
+            </div>
+            <p class="item-desc">Gin, elderflower, fresh lemon, egg white, lavender bitters</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Dark Forest</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$18</span>
+            </div>
+            <p class="item-desc">Mezcal, crème de cassis, blackberry shrub, lime, tajín rim</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Candlelight Negroni</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$19</span>
+            </div>
+            <p class="item-desc">Barrel-aged gin, Campari, sweet vermouth, orange</p>
+          </article>
+        </div>
+
+        <h3 class="menu-category">Spirits Bar</h3>
+        <div class="spirits-list">
+          <div class="spirit-category">
+            <strong>Whiskey & Bourbon</strong>
+            <span>50+ selections — American, Scotch, Japanese, Irish</span>
+          </div>
+          <div class="spirit-category">
+            <strong>Tequila & Mezcal</strong>
+            <span>30+ selections — blanco to añejo</span>
+          </div>
+          <div class="spirit-category">
+            <strong>Gin</strong>
+            <span>20+ craft gins — domestic & imported</span>
+          </div>
+          <div class="spirit-category">
+            <strong>Rum & Cognac</strong>
+            <span>Aged selections, rare pours available</span>
+          </div>
+          <div class="spirit-category">
+            <strong>Vodka</strong>
+            <span>Premium and flavored house-infused options</span>
+          </div>
+        </div>
+        <p class="menu-note">Ask your server about our Whiskey Flight program and rotating barrel selections.</p>
+      </div>
+
+      <!-- WINE & BEER -->
+      <div class="tab-panel" id="panel-wine-beer" role="tabpanel" hidden>
+        <h3 class="menu-category">Wine</h3>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Chardonnay, Sonoma Coast</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$16 / $62</span>
+            </div>
+            <p class="item-desc">Glass / Bottle</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Pinot Gris, Willamette Valley</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$15 / $58</span>
+            </div>
+            <p class="item-desc">Glass / Bottle</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Cabernet Sauvignon, Napa Valley</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$22 / $88</span>
+            </div>
+            <p class="item-desc">Glass / Bottle</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Pinot Noir, Russian River Valley</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$20 / $78</span>
+            </div>
+            <p class="item-desc">Glass / Bottle</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Prosecco</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$14</span>
+            </div>
+            <p class="item-desc">Glass</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Champagne Selections</span>
+              <span class="item-dots"></span>
+              <span class="item-price">Ask Server</span>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="menu-category">Draft Beer</h3>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Local Rotating Craft Tap</span>
+              <span class="item-dots"></span>
+              <span class="item-price">Ask Server</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Stella Artois · Guinness · Blue Moon · Modelo</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$9</span>
+            </div>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item-header">
+              <span class="item-name">Athletic Brewing Co. Run Wild IPA</span>
+              <span class="item-dots"></span>
+              <span class="item-price">$8</span>
+            </div>
+            <p class="item-desc">Non-alcoholic</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- CHEF'S SPECIALS -->
+      <div class="tab-panel" id="panel-specials" role="tabpanel" hidden>
+        <div class="specials-grid">
+          <article class="special-card">
+            <div class="special-badge">Tonight's Special</div>
+            <div class="special-image img-placeholder" data-label="Fire-roasted halibut on a dark plate, flame-kissed garnish">
+              <span class="placeholder-label">Fire-roasted halibut on a dark plate</span>
+            </div>
+            <div class="special-content">
+              <h3>Fire-Roasted Halibut</h3>
+              <p>Seasonal market preparation — ask your server for tonight's details.</p>
+              <span class="special-price">Market Price</span>
+            </div>
+          </article>
+          <article class="special-card">
+            <div class="special-badge">Tonight's Special</div>
+            <div class="special-image img-placeholder" data-label="Massive tomahawk ribeye for two, candlelit table, bottle of red wine">
+              <span class="placeholder-label">Tomahawk ribeye for two, candlelit table</span>
+            </div>
+            <div class="special-content">
+              <h3>Tomahawk Ribeye for Two</h3>
+              <p>40oz dry-aged, sides for two, bottle of red from our sommelier.</p>
+              <span class="special-price">$185</span>
+            </div>
+          </article>
+          <article class="special-card">
+            <div class="special-badge">Tonight's Special</div>
+            <div class="special-image img-placeholder" data-label="Elegant five-course tasting menu, multiple small plates arranged beautifully">
+              <span class="placeholder-label">Five-course tasting menu, small plates</span>
+            </div>
+            <div class="special-content">
+              <h3>Tasting Menu</h3>
+              <p>5-course chef's selection. Available for full table only. 48hr advance notice required.</p>
+              <span class="special-price">$95pp</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ EVENTS ═══════════════ -->
+    <section id="events" aria-label="Live Music & Events">
+      <header class="section-header reveal">
+        <p class="section-label">✦ What's On</p>
+        <h2>Live Music & Events</h2>
+        <p class="section-subtitle">Every weekend is an event. Check what's happening this month.</p>
+      </header>
+
+      <div class="events-controls">
+        <div class="filter-chips" role="group" aria-label="Event type filter">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="live-music">Live Music</button>
+          <button class="chip" data-filter="food-special">Food Specials</button>
+          <button class="chip" data-filter="private-event">Private Events</button>
+        </div>
+        <div class="month-nav">
+          <button class="month-prev" aria-label="Previous month">&lt;</button>
+          <span class="month-label" id="month-label">April 2026</span>
+          <button class="month-next" aria-label="Next month">&gt;</button>
+        </div>
+      </div>
+
+      <div class="view-toggle" role="group" aria-label="Calendar or list view">
+        <button class="toggle-btn active" data-view="list">List</button>
+        <button class="toggle-btn" data-view="calendar">Calendar</button>
+      </div>
+
+      <!-- Calendar view -->
+      <div id="calendar-view" class="calendar-container" hidden>
+        <div class="calendar-grid" id="calendar-grid">
+          <!-- JS-rendered -->
+        </div>
+        <div id="calendar-event-detail"></div>
+      </div>
+
+      <!-- List view -->
+      <div id="list-view" class="events-list">
+        <article class="event-card reveal" data-type="live-music">
+          <div class="event-date">
+            <span class="event-datetime">Friday, April 18 — 9:00 PM</span>
+            <span class="event-tag tag-music">Live Music</span>
+          </div>
+          <h3>The River Blades</h3>
+          <p>Classic rock covers and original Americana. No cover charge.</p>
+          <a href="#" class="event-cal-link">Add to Calendar</a>
+        </article>
+
+        <article class="event-card reveal" data-type="live-music">
+          <div class="event-date">
+            <span class="event-datetime">Saturday, April 19 — 8:30 PM</span>
+            <span class="event-tag tag-music">Live Music</span>
+          </div>
+          <h3>DJ Marcus Bell</h3>
+          <p>Late-night DJ set — 80s, 90s, and soul. Dance floor opens at 10pm.</p>
+          <a href="#" class="event-cal-link">Add to Calendar</a>
+        </article>
+
+        <article class="event-card reveal" data-type="food-special">
+          <div class="event-date">
+            <span class="event-datetime">Tuesday, April 22 — All Night</span>
+            <span class="event-tag tag-food">Food Special</span>
+          </div>
+          <h3>Wagyu Tuesday</h3>
+          <p>Half-price Wagyu Beef Sliders and $14 Ember Old Fashioneds all evening.</p>
+          <a href="#" class="event-cal-link">Add to Calendar</a>
+        </article>
+
+        <article class="event-card reveal" data-type="live-music">
+          <div class="event-date">
+            <span class="event-datetime">Friday, April 25 — 9:00 PM</span>
+            <span class="event-tag tag-music">Live Music</span>
+          </div>
+          <h3>Hollow Creek</h3>
+          <p>Southern rock and blues. Two sets. Free entry.</p>
+          <a href="#" class="event-cal-link">Add to Calendar</a>
+        </article>
+
+        <article class="event-card reveal" data-type="private-event">
+          <div class="event-date">
+            <span class="event-datetime">Saturday, April 26 — 7:00 PM</span>
+            <span class="event-tag tag-private">Private Event</span>
+          </div>
+          <h3>Reserved — Private Dining Room</h3>
+          <p></p>
+        </article>
+
+        <article class="event-card reveal" data-type="food-special">
+          <div class="event-date">
+            <span class="event-datetime">Wednesday, April 30 — All Night</span>
+            <span class="event-tag tag-food">Food Special</span>
+          </div>
+          <h3>Wine Wednesday</h3>
+          <p>All bottles 30% off. Sommelier on floor for guidance.</p>
+          <a href="#" class="event-cal-link">Add to Calendar</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════ GALLERY ═══════════════ -->
+    <section id="gallery" aria-label="Gallery">
+      <header class="section-header reveal">
+        <p class="section-label">✦ Inside the Mill</p>
+        <h2>See It for Yourself</h2>
+      </header>
+
+      <div class="gallery-filters" role="group" aria-label="Gallery filter">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="food">Food</button>
+        <button class="chip" data-filter="atmosphere">Atmosphere</button>
+        <button class="chip" data-filter="live-music">Live Music</button>
+      </div>
+
+      <div class="gallery-masonry">
+        <div class="gallery-item" data-category="atmosphere" tabindex="0" role="button" aria-label="View: Bar interior, warm backlit bottles, evening crowd">
+          <div class="gallery-item-inner" style="aspect-ratio:3/4; background: linear-gradient(135deg, #1a1206 0%, #3d2a12 50%, #1a1206 100%);">
+            <span class="placeholder-label">Bar interior, warm backlit bottles, evening crowd</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="food" tabindex="0" role="button" aria-label="View: Close-up wagyu sliders with steam, bokeh background">
+          <div class="gallery-item-inner" style="aspect-ratio:4/3; background: linear-gradient(160deg, #0d1a0d 0%, #2d1f0a 60%, #0d1a0d 100%);">
+            <span class="placeholder-label">Close-up wagyu sliders with steam, bokeh background</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="live-music" tabindex="0" role="button" aria-label="View: Live band on stage, amber stage lighting, packed crowd">
+          <div class="gallery-item-inner" style="aspect-ratio:16/9; background: linear-gradient(145deg, #1a0f06 0%, #3d2012 40%, #0f1a0f 100%);">
+            <span class="placeholder-label">Live band on stage, amber stage lighting, packed crowd</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="atmosphere" tabindex="0" role="button" aria-label="View: Candlelit dining table, rustic wood, brass accents">
+          <div class="gallery-item-inner" style="aspect-ratio:1/1; background: linear-gradient(180deg, #1c1410 0%, #2a1a0a 50%, #0f1a0f 100%);">
+            <span class="placeholder-label">Candlelit dining table, rustic wood, brass accents</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="food" tabindex="0" role="button" aria-label="View: Ribeye with herb butter, smoke rising, dark plate">
+          <div class="gallery-item-inner" style="aspect-ratio:3/4; background: linear-gradient(120deg, #0f0a06 0%, #3d1a0a 50%, #1a1206 100%);">
+            <span class="placeholder-label">Ribeye with herb butter, smoke rising, dark plate</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="atmosphere" tabindex="0" role="button" aria-label="View: Exterior at night, warm glow through windows, signage lit">
+          <div class="gallery-item-inner" style="aspect-ratio:16/9; background: linear-gradient(135deg, #060f06 0%, #1a2a1a 40%, #2d1f0a 100%);">
+            <span class="placeholder-label">Exterior at night, warm glow through windows, signage lit</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="food" tabindex="0" role="button" aria-label="View: Cocktail being poured, amber liquid, crystal glass, bar blur">
+          <div class="gallery-item-inner" style="aspect-ratio:4/5; background: linear-gradient(150deg, #1a1206 0%, #4d3a12 60%, #0f1a0f 100%);">
+            <span class="placeholder-label">Cocktail being poured, amber liquid, crystal glass, bar blur</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="live-music" tabindex="0" role="button" aria-label="View: DJ booth, colored lights, crowd silhouettes">
+          <div class="gallery-item-inner" style="aspect-ratio:3/2; background: linear-gradient(170deg, #0f0a1a 0%, #2d1a2a 50%, #1a0f06 100%);">
+            <span class="placeholder-label">DJ booth, colored lights, crowd silhouettes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog" aria-label="Gallery image">
+      <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <div class="lightbox-content">
+        <div class="lightbox-image" id="lightbox-image"></div>
+        <p class="lightbox-label" id="lightbox-label"></p>
+      </div>
+    </div>
+
+    <!-- ═══════════════ RESERVATIONS ═══════════════ -->
+    <section id="reservations" aria-label="Make a Reservation">
+      <div class="reservations-glow" aria-hidden="true"></div>
+      <div class="reservations-grid">
+        <div class="reservations-text reveal">
+          <p class="section-label">✦ Join Us</p>
+          <h2>Make a<br>Reservation</h2>
+          <p>Walk-ins always welcome, but we recommend booking ahead, especially on weekends when we have live music.</p>
+          <div class="contact-info">
+            <p><span aria-hidden="true">📞</span> (845) 555-0192</p>
+            <p><span aria-hidden="true">📧</span> hello@themillatnj.com</p>
+          </div>
+        </div>
+        <div class="reservations-form-wrap reveal">
+          <form id="reservation-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="res-name">Full Name</label>
+                <input type="text" id="res-name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="res-email">Email</label>
+                <input type="email" id="res-email" name="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="res-phone">Phone</label>
+                <input type="tel" id="res-phone" name="phone" required autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label for="res-party">Party Size</label>
+                <select id="res-party" name="party" required>
+                  <option value="">Select</option>
+                  <option>1–2</option>
+                  <option>3–4</option>
+                  <option>5–6</option>
+                  <option>7–8</option>
+                  <option>8+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="res-date">Date</label>
+                <input type="date" id="res-date" name="date" required>
+              </div>
+              <div class="form-field">
+                <label for="res-time">Time</label>
+                <select id="res-time" name="time" required>
+                  <option value="">Select</option>
+                  <option>5:00 PM</option>
+                  <option>5:30 PM</option>
+                  <option>6:00 PM</option>
+                  <option>6:30 PM</option>
+                  <option>7:00 PM</option>
+                  <option>7:30 PM</option>
+                  <option>8:00 PM</option>
+                  <option>8:30 PM</option>
+                  <option>9:00 PM</option>
+                  <option>9:30 PM</option>
+                  <option>10:00 PM</option>
+                  <option>10:30 PM</option>
+                  <option>11:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="res-occasion">Occasion</label>
+              <select id="res-occasion" name="occasion">
+                <option value="">None</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Business</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="res-requests">Special Requests</label>
+              <textarea id="res-requests" name="requests" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-amber btn-full">Request Reservation</button>
+            <p class="form-note">You'll receive a confirmation within 2 hours.</p>
+          </form>
+          <div class="form-success" id="form-success" hidden>
+            <h3>Thank you!</h3>
+            <p>Your reservation request has been received. We'll confirm within 2 hours via email.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PRIVATE EVENTS ═══════════════ -->
+    <section id="private-events" aria-label="Private Events">
+      <div class="private-events-bg">
+        <div class="img-placeholder" data-label="Private events room: long table, candlelight, intimate setting">
+          <span class="placeholder-label">Private events room: long table, candlelight, intimate setting</span>
+        </div>
+        <div class="private-events-overlay"></div>
+      </div>
+      <div class="private-events-content reveal">
+        <p class="section-label">✦ Private Events</p>
+        <h2>The Whole Mill Is Yours</h2>
+        <p>From intimate dinners to full restaurant buyouts, The Mill at Sutters is the setting your event deserves. Our private dining room accommodates up to 40 guests. Full buyout available for up to 120.</p>
+        <div class="private-features">
+          <div class="private-feature">
+            <span aria-hidden="true">🎤</span>
+            <span>Live Entertainment Available</span>
+          </div>
+          <div class="private-feature">
+            <span aria-hidden="true">🍽️</span>
+            <span>Custom Curated Menus</span>
+          </div>
+          <div class="private-feature">
+            <span aria-hidden="true">🥂</span>
+            <span>Full Bar & Cocktail Service</span>
+          </div>
+        </div>
+        <button class="btn btn-amber" id="private-events-cta">Inquire About Private Events</button>
+      </div>
+
+      <div class="private-events-form-wrap" id="private-events-form" hidden>
+        <form id="private-form" novalidate>
+          <h3>Private Event Inquiry</h3>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="pe-name">Name</label>
+              <input type="text" id="pe-name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="pe-email">Email</label>
+              <input type="email" id="pe-email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="pe-phone">Phone</label>
+              <input type="tel" id="pe-phone" name="phone" required>
+            </div>
+            <div class="form-field">
+              <label for="pe-type">Event Type</label>
+              <input type="text" id="pe-type" name="type" placeholder="Birthday, Corporate, Wedding...">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="pe-guests">Guest Count</label>
+              <input type="number" id="pe-guests" name="guests" min="1" max="120">
+            </div>
+            <div class="form-field">
+              <label for="pe-date">Preferred Date</label>
+              <input type="date" id="pe-date" name="date">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="pe-message">Message</label>
+            <textarea id="pe-message" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-amber btn-full">Send Inquiry</button>
+        </form>
+        <div class="form-success" id="private-form-success" hidden>
+          <h3>Inquiry Sent!</h3>
+          <p>Our events team will reach out within 24 hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT / HOURS / LOCATION ═══════════════ -->
+    <section id="contact" aria-label="Contact, Hours & Location">
+      <div class="contact-grid">
+        <div class="contact-col reveal">
+          <h3>Find Us</h3>
+          <address>
+            <p><strong>The Mill at Sutters</strong></p>
+            <p>214 NY-59 Unit 1<br>Airmont, NY 10901</p>
+            <p>(845) 555-0192<br>hello@themillatnj.com</p>
+          </address>
+          <div class="map-placeholder" aria-label="Map showing The Mill at Sutters at 214 NY-59 Airmont NY">
+            <span class="map-pin" aria-hidden="true">◆</span>
+            <span class="placeholder-label">Google Maps embed — 214 NY-59 Airmont NY</span>
+          </div>
+        </div>
+
+        <div class="contact-col reveal">
+          <h3>Hours</h3>
+          <div class="hours-block">
+            <h4>Kitchen Hours</h4>
+            <dl class="hours-list">
+              <div><dt>Tuesday – Thursday</dt><dd>5:00 PM – 11:00 PM</dd></div>
+              <div><dt>Friday – Saturday</dt><dd>4:00 PM – 12:00 AM</dd></div>
+              <div><dt>Sunday</dt><dd>3:00 PM – 10:00 PM</dd></div>
+              <div><dt>Monday</dt><dd>Closed</dd></div>
+            </dl>
+          </div>
+          <div class="hours-block">
+            <h4>Bar & Lounge</h4>
+            <p class="hours-note">Stays open 1–2 hours after kitchen close</p>
+            <dl class="hours-list">
+              <div><dt>Friday & Saturday</dt><dd>Until 2:00 AM</dd></div>
+            </dl>
+          </div>
+          <div class="hours-block">
+            <h4>Live Music</h4>
+            <dl class="hours-list">
+              <div><dt>Most Fri & Sat</dt><dd>9:00 PM – 1:00 AM</dd></div>
+            </dl>
+            <p class="hours-note">Check the events calendar for full schedule</p>
+          </div>
+        </div>
+
+        <div class="contact-col reveal">
+          <h3>Stay in the Loop</h3>
+          <p class="social-handle">@themillatnj</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok" class="social-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.93 2.93 0 0 1 .88.13v-3.5a6.37 6.37 0 0 0-.88-.07A6.27 6.27 0 0 0 3.21 15a6.27 6.27 0 0 0 6.28 6.14 6.27 6.27 0 0 0 6.28-6.14V8.73a8.28 8.28 0 0 0 3.82.96V6.27a4.85 4.85 0 0 1-.01.42z"/></svg>
+            </a>
+          </div>
+          <form class="newsletter-form" id="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Email for newsletter</label>
+            <div class="newsletter-input-wrap">
+              <input type="email" id="newsletter-email" placeholder="Your email" required>
+              <button type="submit" class="btn btn-amber">Join Us →</button>
+            </div>
+            <p class="newsletter-note">No spam. Just events, specials, and last-minute openings.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer id="site-footer">
+    <div class="footer-top">
+      <a href="#" class="nav-logo footer-logo" aria-label="The Mill at Sutters — Home">
+        <span class="logo-line-1">The Mill</span>
+        <span class="logo-diamond">◆</span>
+        <span class="logo-line-2">at Sutters</span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#private-events">Private Events</a>
+      </nav>
+      <a href="#reservations" class="btn btn-amber">Reserve a Table</a>
+    </div>
+    <div class="footer-divider" aria-hidden="true"><span>◆</span></div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 The Mill at Sutters. All rights reserved.</p>
+      <p>Airmont, NY</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="TikTok" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.93 2.93 0 0 1 .88.13v-3.5a6.37 6.37 0 0 0-.88-.07A6.27 6.27 0 0 0 3.21 15a6.27 6.27 0 0 0 6.28 6.14 6.27 6.27 0 0 0 6.28-6.14V8.73a8.28 8.28 0 0 0 3.82.96V6.27a4.85 4.85 0 0 1-.01.42z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
